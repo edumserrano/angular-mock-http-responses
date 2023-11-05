@@ -32,7 +32,7 @@ Since we can only define a single `bypass` function, we define a catch all proxy
 
 > **Note**
 > 
-> Angular's proxy feature is built on top of [Webpack's dev-server](https://webpack.js.org/configuration/dev-server/#devserver-proxy) which makes use of the powerful http-proxy-middleware package. Check out its [documentation](https://github.com/chimurai/http-proxy-middleware#options) for more advanced usages.
+> Angular's proxy feature is built on top of [Webpack's dev-server proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy) which makes use of the powerful http-proxy-middleware package. Check out its [documentation](https://github.com/chimurai/http-proxy-middleware#options) for more advanced usages.
 >
 > The `bypass` feature though, is a Webpack dev-server feature, not part of the http-proxy-middleware package.  
 >
