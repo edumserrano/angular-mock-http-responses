@@ -18,4 +18,3 @@ This solution requires extending Angular's Webpack configuration. To do the code
 >
 > This solution is dependent on using Webpack as your bundler. Angular 16 brings a preview support for using [vite](https://vitejs.dev/). If you wanted to use vite, this solution would not work.
 >
-
