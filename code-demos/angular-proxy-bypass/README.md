@@ -4,7 +4,7 @@
 
 This code demo uses [webpack's dev-server proxy bypass](https://webpack.js.org/configuration/dev-server/#devserverproxy) feature to return mocked HTTP responses.
 
-The thing to note is that even though the `bypass` function is defined at the level of a proxy entry, [when it's defined, it applies to all requests](https://github.com/webpack/webpack-dev-server/issues/829). I think this is a bug and even though the bug report for this has been closed, I don't think they implemented a fix or have any plans to do so. Furthermore, the [webpack/webpack-dev-server#4827](https://github.com/webpack/webpack-dev-server/pull/4827) seems to indicate that Webpack's dev-server plans to deprecate the bypass function:
+The thing to note is that even though the `bypass` function is defined at the level of a proxy entry, [when it's defined, it applies to all requests](https://github.com/webpack/webpack-dev-server/issues/829). I think this is a bug and even though the bug report for this has been closed, I don't think they implemented a fix or have any plans to do so. Furthermore, the webpack/webpack-dev-server#4827 PR seems to indicate that Webpack's dev-server plans to deprecate the bypass function:
 
 > Using the 'bypass' option is deprecated. Please use the 'router' and 'context' options. Read more at https://github.com/chimurai/http-proxy-middleware/tree/v2.0.6#http-proxy-middleware-options"
 
@@ -27,7 +27,7 @@ Since we can only define a single `bypass` function, we define a catch all proxy
 
 > **Warning**
 >
-> This solution is dependent on using Webpack as your bundler. See angular/angular-cli#25337 [proxyConfig option is not working with esbuild dev server](https://github.com/angular/angular-cli/issues/25337)
+> This solution is dependent on using Webpack as your bundler. See angular/angular-cli#25337.
 >
 
 > **Note**

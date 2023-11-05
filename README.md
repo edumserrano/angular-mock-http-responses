@@ -78,7 +78,7 @@ The following links were helpful whilst researching the solutions provided in th
 - [How to proxy HTTP requests in Angular](https://medium.com/ngconf/how-to-proxy-http-requests-in-angular-f873183880a4)
 - Angular docs: [Proxying to a backend server](https://angular.io/guide/build#proxying-to-a-backend-server)
 - Angular docs: [Bypass the proxy](https://angular.io/guide/build#bypass-the-proxy)
-- webpack/webpack-dev-server#829:[bypass is handling all requests regardless proxy options](https://github.com/webpack/webpack-dev-server/issues/829)
+- webpack/webpack-dev-server#829
 - stackoverflow: [Angular proxy bypass intercepts all requests regardless of path](https://stackoverflow.com/questions/69906702/angular-proxy-bypass-intercepts-all-requests-regardless-of-path)
 - stackoverflow: [How do you return data to your Angular app using proxy.conf.json?](https://stackoverflow.com/questions/49443750/how-do-you-return-data-to-your-angular-app-using-proxy-conf-json)
 - Webpack docs: [dev-server proxy](https://webpack.js.org/configuration/dev-server/#devserverproxy)
@@ -89,7 +89,7 @@ The following links were helpful whilst researching the solutions provided in th
 
 - [webpack/webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 - [webpack/webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware)
-- webpack/webpack-dev-server#4129: [Provide migration guide for setupMiddlewares](https://github.com/webpack/webpack-dev-server/issues/4129)
+- webpack/webpack-dev-server#4129
 
 ### Mock Service Worker
 
@@ -97,7 +97,7 @@ The following links were helpful whilst researching the solutions provided in th
 - [https://mswjs.io/](https://mswjs.io/) and it's [Getting started](https://mswjs.io/docs/getting-started) guide
 - [mswjs/msw](https://github.com/mswjs/msw)
 - [mswjs/examples](https://github.com/mswjs/examples)
-- mswjs/msw#887: [Is there an option to use MSW as a proxy?](https://github.com/mswjs/msw/discussions/887)
+- mswjs/msw#887
 
 ### Angular HTTP interceptors
 
