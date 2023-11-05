@@ -8,6 +8,8 @@ module.exports = {
         throw new Error("webpack-dev-server is not defined");
       }
 
+      // see middleware configuration examples at
+      // https://github.com/webpack/webpack-dev-server/issues/4129
       devServer.app.get("/api/cars", (request, response) => {
         response.json(cars);
       });
