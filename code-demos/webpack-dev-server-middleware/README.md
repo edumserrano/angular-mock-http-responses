@@ -12,7 +12,7 @@ This code demo uses [webpack's dev-server middleware](https://github.com/webpack
 
 ## Implementation details
 
-This solution requires extending Angular's Webpack configuration. To do the code demo used the [ngx-build-plus](https://www.npmjs.com/package/ngx-build-plus) npm package and created a [webpack.config.js](/code-demos/webpack-dev-server-middleware/webpack.config.js) file where the middleware that returns mocked responses is defined. The `webpack.config.js` is set as an `extraWebpackConfig` to use int the [angular.json](/code-demos/angular-proxy-bypass/angular.json) file.
+This solution requires extending Angular's Webpack configuration. To do the code demo used the [ngx-build-plus](https://www.npmjs.com/package/ngx-build-plus) npm package and created a [webpack.config.js](/code-demos/webpack-dev-server-middleware/webpack.config.js) file where the middleware that returns mocked responses is defined. The `webpack.config.js` is set as an `extraWebpackConfig` to use int the [angular.json](/code-demos/webpack-dev-server-middleware/angular.json) file.
 
 > **Warning**
 >
