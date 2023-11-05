@@ -8,7 +8,7 @@
   - [Mock Service Worker comparison with similar tools](#mock-service-worker-comparison-with-similar-tools)
 - [Learn more](#learn-more)
   - [Angular proxying support](#angular-proxying-support)
-  - [Webpack dev-server](#webpack-dev-server)
+  - [Webpack dev-server middleware](#webpack-dev-server-middleware)
   - [Mock Service Worker](#mock-service-worker)
   - [Angular HTTP interceptors](#angular-http-interceptors-1)
 
@@ -81,13 +81,14 @@ The following links were helpful whilst researching the solutions provided in th
 - webpack/webpack-dev-server#829:[bypass is handling all requests regardless proxy options](https://github.com/webpack/webpack-dev-server/issues/829)
 - stackoverflow: [Angular proxy bypass intercepts all requests regardless of path](https://stackoverflow.com/questions/69906702/angular-proxy-bypass-intercepts-all-requests-regardless-of-path)
 - stackoverflow: [How do you return data to your Angular app using proxy.conf.json?](https://stackoverflow.com/questions/49443750/how-do-you-return-data-to-your-angular-app-using-proxy-conf-json)
-- Webpack docs: [dev server](https://webpack.js.org/configuration/dev-server/#devserverproxy)
+- Webpack docs: [dev-server proxy](https://webpack.js.org/configuration/dev-server/#devserverproxy)
 - [Mastering Angular proxy configuration](https://jmrobles.medium.com/mastering-angular-proxy-configuration-6c8df0b175fe)
 - [chimurai/http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)
 
-### Webpack dev-server
+### Webpack dev-server middleware
 
 - [webpack/webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+- [webpack/webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware)
 - webpack/webpack-dev-server#4129: [Provide migration guide for setupMiddlewares](https://github.com/webpack/webpack-dev-server/issues/4129)
 
 ### Mock Service Worker
