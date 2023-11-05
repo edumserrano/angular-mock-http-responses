@@ -16,19 +16,19 @@
 
 I was working on an Angular project with micro frontends using [Webpack Module Federation](https://github.com/edumserrano/webpack-module-federation-with-angular) where I was building a page that had to load two micro frontends. 
 
-Whilst working on developing this page, the way I was dealing with the API calls from the micro frontends was by using [Angular's proxying support](https://angular.io/guide/build#proxying-to-a-backend-server) to send the API calls from the micro frontends to the APIs that were deployed on a non-prod environment or to local running instances.
+Whilst working on developing this page, the way I was dealing with the API requests from the micro frontends was by using [Angular's proxying support](https://angular.io/guide/build#proxying-to-a-backend-server) to forward them to the APIs that were deployed on a non-prod environment or to local running instances.
 
 I was facing a few issues with the above approach:
 
 - Sometimes the non-prod APIs had issues/downtime and it affected the local development of the page. 
-- The API calls were taking some non-negligible time to complete. This slowed down the development of the page and was painful for the dev loop experience.
+- The API requests were taking some non-negligible time to complete. This slowed down the development of the page and was painful for the dev loop experience.
 - Some API requests require authentication and there was no easy way to provide it. Note that this was doable, I could go through the steps to get the required authentication headers and send them with the API requests using Angular's proxying support but it was still a cumbersome process.
 - It's cumbersome having to start local versions of the APIs whenever I didn't want/couldn't use the non-prod APIs.
-- Sometimes I wanted to test scenarios for the development of the page which depended on the data returned from the API calls. This was not only a cumbersome process but it was also an impossible one depending on the scenario I wanted to simulate.
+- Sometimes I wanted to test scenarios for the development of the page which depended on the data returned from the API requests. This was not only a cumbersome process but it was also an impossible one depending on the scenario I wanted to simulate.
 
 > **Note**
 >
-> It's also important to remember that a lot of the changes needed to do on the page were non-dependent on the API calls from the micro frontends, such as style changes, but the app wouldn't even start/work properly if those API calls fail.
+> It's also important to remember that a lot of the changes needed to do on the page were non-dependent on the API requests from the micro frontends, such as style changes, but the app wouldn't even start/work properly if those API requests fail.
 >
 
 **This repo is the result of investigating ways to provide a solution for this problem by providing a way to control the returned HTTP responses.**
@@ -58,7 +58,7 @@ You could use [Angular HTTP interceptors](https://angular.io/guide/http-intercep
 
 > **Note**
 >
-> I couldn't get this solution to work for my scenario which used Webpack Module Federation. I added an HTTP interceptor in the app that was loading the two micro frontends but I couldn't get the interceptor to intercept any of the HTTP calls from the remotely loaded micro frontends.
+> I couldn't get this solution to work for my scenario which used Webpack Module Federation. I added an HTTP interceptor in the app that was loading the two micro frontends but I couldn't get the interceptor to intercept any of the HTTP requests from the remotely loaded micro frontends.
 >
 > This is probably feasable but I didn't dig more into it. I belive it would require a certain setup in making sure the HttpClient is a singleton across the micro frontends. For more info see the [links in the learn more section](#angular-http-interceptors-1) about Angular HTTP interceptors.
 >
