@@ -8,8 +8,8 @@
   - [Mock Service Worker comparison with similar tools](#mock-service-worker-comparison-with-similar-tools)
 - [Learn more](#learn-more)
   - [Angular proxying support](#angular-proxying-support)
-  - [Mock Service Worker](#mock-service-worker)
   - [Webpack dev server](#webpack-dev-server)
+  - [Mock Service Worker](#mock-service-worker)
   - [Angular HTTP interceptors](#angular-http-interceptors-1)
 
 ## Intro
@@ -85,6 +85,11 @@ The following links were helpful whilst researching the solutions provided in th
 - [Mastering Angular proxy configuration](https://jmrobles.medium.com/mastering-angular-proxy-configuration-6c8df0b175fe)
 - [chimurai/http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)
 
+### Webpack dev server
+
+- [webpack/webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+- webpack/webpack-dev-server#4129: [Provide migration guide for setupMiddlewares](https://github.com/webpack/webpack-dev-server/issues/4129)
+
 ### Mock Service Worker
 
 - [Stop mocking fetch](https://kentcdodds.com/blog/stop-mocking-fetch)
@@ -92,11 +97,6 @@ The following links were helpful whilst researching the solutions provided in th
 - [mswjs/msw](https://github.com/mswjs/msw)
 - [mswjs/examples](https://github.com/mswjs/examples)
 - mswjs/msw#887: [Is there an option to use MSW as a proxy?](https://github.com/mswjs/msw/discussions/887)
-
-### Webpack dev server
-
-- [webpack/webpack-dev-server](https://github.com/webpack/webpack-dev-server)
-- webpack/webpack-dev-server#4129: [Provide migration guide for setupMiddlewares](https://github.com/webpack/webpack-dev-server/issues/4129)
 
 ### Angular HTTP interceptors
 
