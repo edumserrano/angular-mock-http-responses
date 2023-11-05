@@ -8,7 +8,7 @@
   - [Mock Service Worker comparison with similar tools](#mock-service-worker-comparison-with-similar-tools)
 - [Learn more](#learn-more)
   - [Angular proxying support](#angular-proxying-support)
-  - [Webpack dev server](#webpack-dev-server)
+  - [Webpack dev-server](#webpack-dev-server)
   - [Mock Service Worker](#mock-service-worker)
   - [Angular HTTP interceptors](#angular-http-interceptors-1)
 
@@ -38,7 +38,7 @@ I was facing a few issues with the above approach:
 | Demo                                                                                 | Description                                                                                                                                 |
 | :----------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
 | [angular-proxy-bypass](/code-demos/angular-proxy-bypass/README.md)                   | Shows how to use [Angular's proxying support](https://angular.io/guide/build#proxying-to-a-backend-server) to return mocked HTTP responses. |
-| [webpack-dev-server-middleware](/code-demos/webpack-dev-server-middleware/README.md) | Shows how to add a middleware to [Webpack's dev server](https://github.com/webpack/webpack-dev-server) to return mocked HTTP responses.     |
+| [webpack-dev-server-middleware](/code-demos/webpack-dev-server-middleware/README.md) | Shows how to add a middleware to [Webpack's dev-server](https://github.com/webpack/webpack-dev-server) to return mocked HTTP responses.     |
 | [mock-service-worker](/code-demos/mock-service-worker/README.md)                     | Shows how to use [msw](https://mswjs.io/) to return mocked HTTP responses.                                                                  |
 
 ## Preferred solution
@@ -85,7 +85,7 @@ The following links were helpful whilst researching the solutions provided in th
 - [Mastering Angular proxy configuration](https://jmrobles.medium.com/mastering-angular-proxy-configuration-6c8df0b175fe)
 - [chimurai/http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)
 
-### Webpack dev server
+### Webpack dev-server
 
 - [webpack/webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 - webpack/webpack-dev-server#4129: [Provide migration guide for setupMiddlewares](https://github.com/webpack/webpack-dev-server/issues/4129)
