@@ -1,5 +1,12 @@
 # Mock HTTP responses with Angular
 
+[![Build the demo apps](https://github.com/edumserrano/angular-mock-http-responses/actions/workflows/build.yml/badge.svg)](https://github.com/edumserrano/angular-mock-http-responses/actions/workflows/build.yml)
+[![Markdown link check](https://github.com/edumserrano/angular-mock-http-responses/actions/workflows/markdown-link-check.yml/badge.svg)](https://github.com/edumserrano/angular-mock-http-responses/actions/workflows/markdown-link-check.yml)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/edumserrano)](https://github.com/sponsors/edumserrano)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Eduardo%20Serrano-blue.svg)](https://www.linkedin.com/in/eduardomserrano/)
+
 - [Intro](#intro)
 - [Code demos](#code-demos)
 - [Preferred solution](#preferred-solution)
