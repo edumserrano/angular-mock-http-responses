@@ -1,0 +1,61 @@
+name: Build the demo apps
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 0' # Once a week: "At 00:00 on Sunday."
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  angular-proxy-bypass:
+    name: angular-proxy-bypass demo
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: angular-proxy-bypass demo
+      run: |
+          # This does not test that the code demo does what it should do,
+          # only that we can build the app
+          cd "${{ github.workspace }}/code-demos/angular-proxy-bypass"
+          npm ci
+          npx ng build --configuration=production
+  mock-service-worker:
+    name: mock-service-worker demo
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: mock-service-worker-bypass demo
+      run: |
+          # This does not test that the code demo does what it should do,
+          # only that we can build the app
+          cd "${{ github.workspace }}/code-demos/mock-service-worker"
+          npm ci
+          npx ng build --configuration=production
+  webpack-dev-server-middleware:
+    name: webpack-dev-server-middleware demo
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: webpack-dev-server-middleware demo
+      run: |
+          # This does not test that the code demo does what it should do,
+          # only that we can build the app
+          cd "${{ github.workspace }}/code-demos/webpack-dev-server-middleware"
+          npm ci
+          npx ng build --configuration=production
