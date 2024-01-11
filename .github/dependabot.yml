@@ -26,7 +26,7 @@ updates:
       - 'bot:robot:'
       - 'npm'
     groups:
-      npm-angular-proxy-bypass:
+      npm:
         patterns:
           - "*"
   - package-ecosystem: "npm"
@@ -38,7 +38,7 @@ updates:
       - 'bot:robot:'
       - 'npm'
     groups:
-      npm-mock-service-worker:
+      npm:
         patterns:
           - "*"
   - package-ecosystem: "npm"
@@ -50,6 +50,6 @@ updates:
       - 'bot:robot:'
       - 'npm'
     groups:
-      npm-webpack-dev-server-middleware:
+      npm:
         patterns:
           - "*"
