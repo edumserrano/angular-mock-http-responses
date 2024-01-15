@@ -22,7 +22,7 @@
     "@angular-devkit/build-angular": "^17.0.10",
     "@angular/cli": "~17.0.10",
     "@angular/compiler-cli": "^17.0.9",
-    "msw": "^2.0.13",
+    "msw": "^2.0.14",
     "typescript": "~5.2.2"
   },
   "msw": {
