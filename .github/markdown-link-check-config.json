@@ -5,6 +5,10 @@
       "description": "Linkedin returns 999, can't figure out how to make this work past Linkedin's 'are you a human?' check."
     },
     {
+      "pattern": "^https://stackoverflow.com/",
+      "description": "stackoverflow returns 403. Setting User-Agent on postman seems to be the minimum required but doesn't seem to work with markdown link check."
+    },
+    {
       "pattern": "^http://localhost*",
       "description": "Ignore references to localhost."
     }
